@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.VectorArt {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.VectorArt img {
+  display: block;
+  background: center cover/center;
+  width: 600px;
+  height: 700px;
+}
+
+.Jumbo {
+  margin-top: 180px;
+  margin-bottom: 240px;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+.Jumbo h3 {
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+@media (max-width: 411px) {
+  .VectorArt {
+    display: block;
+    /* justify-content: center; */
+  }
+
+  .VectorArt img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 500px;
+  }
+
+  .Jumbo {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  .Jumbo h3 {
+    margin-bottom: 0;
+    font-size: 4rem;
+  }
+}

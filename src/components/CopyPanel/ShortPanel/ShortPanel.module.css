@@ -1,0 +1,43 @@
+.ShortDiv {
+  height: auto;
+  background: rgb(14, 48, 121);
+  margin-top: 0px;
+}
+
+.ShortDiv input {
+  margin: 0px 40px;
+  height: 50px;
+  width: 520px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.ShortDiv button {
+  margin: 0 30px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+@media (max-width: 411px) {
+  .ShortDiv input {
+    margin: 30px 20px;
+    height: 50px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .ShortDiv button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-left: 140px;
+    margin-bottom: 30px;
+  }
+}

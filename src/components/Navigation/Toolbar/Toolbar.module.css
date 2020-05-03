@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+
+.Toolbar {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  background: #3cbee6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+  color: white;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.Logo {
+  display: flex;
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+}
