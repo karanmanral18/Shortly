@@ -9,7 +9,7 @@ const vectorArt = () => (
         <span style={{ color: "#ff7675" }}>Create click worthy</span> Links
       </h3>
       <p style={{ color: "#a5b1c2" }}>
-        Shorten your urls on the go with Shortly Url Microservice{" "}
+        Shorten your urls on the go with Shortly API{" "}
       </p>
     </div>
     <img src={Va2} alt="MyBurger" />

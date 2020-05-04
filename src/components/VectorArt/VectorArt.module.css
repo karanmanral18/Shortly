@@ -2,7 +2,7 @@
 .VectorArt {
   display: flex;
   justify-content: space-evenly;
-  height: 60vh;
+  height: 480px;
   /* margin-bottom: 50px; */
 }
 
