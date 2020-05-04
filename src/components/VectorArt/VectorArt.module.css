@@ -54,7 +54,7 @@
     font-size: 3rem;
   }
 }
-@media (min-width: 401px) and (max-width: 1066px) {
+@media (min-width: 412px) and (max-width: 1066px) {
   .VectorArt img {
     margin: auto;
     width: 50%;

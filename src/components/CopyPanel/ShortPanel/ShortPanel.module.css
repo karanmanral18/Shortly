@@ -22,14 +22,14 @@
   border-radius: 5px;
   font-size: 1.2rem;
 }
-@media (max-width: 411px) {
+@media (max-width: 419px) {
   .ShortDiv {
     background: rgb(6, 34, 95);
   }
   .ShortDiv input {
     margin: 30px 20px;
     height: 50px;
-    width: 90%;
+    width: 85%;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -68,30 +68,8 @@
     margin-right: 80px;
   }
 }
-@media (min-width: 400px) {
-  .ShortDiv {
-    background: rgb(6, 34, 95);
-  }
-  .ShortDiv input {
-    height: 50px;
-    width: 70%;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-left: 80px;
-  }
 
-  .ShortDiv button {
-    height: 50px;
-    width: 100px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    margin-right: 80px;
-  }
-}
-@media (min-width: 410px) and (max-width: 1030px) {
+@media (min-width: 412px) and (max-width: 1030px) {
   .ShortDiv {
     background: rgb(6, 34, 95);
   }
