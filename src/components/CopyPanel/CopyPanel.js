@@ -18,6 +18,13 @@ class CopyPanel extends Component {
     const longURL = {
       longUrl: this.state.longURL,
     };
+
+    if (this.state.longURL === "") {
+      console.log("Empty");
+
+      return;
+    }
+
     this.setState({ isShortPresent: true });
     axios
       .post("https://shortly86505.herokuapp.com/api/url/shorten", longURL)
@@ -25,6 +32,10 @@ class CopyPanel extends Component {
         console.log(response);
         this.setState({ shortUrl: response.data.shortUrl });
       });
+  };
+
+  clearDataHandler = () => {
+    this.setState({ longURL: "" });
   };
 
   onCopy = () => {
@@ -59,12 +70,24 @@ class CopyPanel extends Component {
                 this.setState({ longURL: event.target.value })
               }
             />
-            <button onClick={this.postDataHandler}>Shorten</button>
+            <button
+              onClick={
+                this.state.longURL !== ""
+                  ? this.clearDataHandler
+                  : this.postDataHandler
+              }
+            >
+              {this.state.longURL === "" ? (
+                <span>Shorten</span>
+              ) : (
+                <span>Clear</span>
+              )}
+            </button>
+            <ShortPanel
+              copied={this.state.copied}
+              shortUrl={this.state.shortUrl}
+            />
           </div>
-          <ShortPanel
-            copied={this.state.copied}
-            shortUrl={this.state.shortUrl}
-          />
         </React.Fragment>
       );
     }

@@ -1,12 +1,14 @@
 .Form {
   height: auto;
-  background: rgb(14, 48, 121);
+  background: rgb(6, 34, 95);
   margin-top: 0px;
+  height: 300px;
 }
 
 .Form input {
-  margin: 30px 40px;
-  height: 50px;
+  margin-top: 70px;
+  /* margin-left: 250px; */
+  height: 60px;
   width: 700px;
   border: none;
   border-radius: 5px;
@@ -15,13 +17,24 @@
 
 .Form button {
   margin: 0 30px;
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 170px;
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  color: #fff;
+  background: rgb(53, 87, 160);
+}
+
+.Form button:hover {
+  background: rgb(40, 96, 218);
 }
 @media (max-width: 411px) {
+  .Form {
+    height: 220px;
+    /* height: auto; */
+  }
+
   .Form input {
     margin: 30px 20px;
     height: 50px;
@@ -38,6 +51,55 @@
     border-radius: 5px;
     font-size: 1.2rem;
     margin-left: 140px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1023px) {
+  .Form {
+    height: 220px;
+    /* height: auto; */
+  }
+
+  .Form input {
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 80px;
+    font-size: 1rem;
+  }
+
+  .Form button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-right: 80px;
+  }
+}
+@media (min-width: 410px) and (max-width: 1030px) {
+  .Form {
+    height: 220px;
+  }
+
+  .Form input {
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-left: 40px;
+    font-size: 1rem;
+  }
+
+  .Form button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
